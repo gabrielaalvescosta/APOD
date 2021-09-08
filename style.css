@@ -1,0 +1,212 @@
+body {
+    font-size: 18px;
+    font-family: 'Urbanist', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(328.78deg, #030086 14.45%, #BD6177 84.36%), linear-gradient(301.28deg, #209B4A 0%, #7000FF 100%), radial-gradient(100% 138.56% at 100% 0%, #9771b9 0%, #00FFE0 100%), radial-gradient(100% 148.07% at 0% 0%, #D50000 0%, #00FFFF 100%);
+    background-blend-mode: soft-light, overlay, difference, normal;
+    display: flex;
+    background-position-x: 70vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin: 2em;
+    height: 100vh;
+}
+
+.title {
+    max-width: 25%;
+    color: white;
+}
+
+.container-image {
+    width: 640px;
+    height: 360px;
+    border-radius: 1em;
+    box-shadow: 1px 2px 20px 4px rgb(14 13 90 / 17%);
+}
+
+#picture-apod {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header h1 {
+    font-size: 4em;
+    font-weight: 900;
+    line-height: 1.4;
+}
+
+header h2 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #c0b4f9;
+}
+
+header p {
+    margin: 2em 0;
+    font-weight: 700;
+    color: #816adc;
+}
+
+.choose {
+    /* margin: 1em; */
+    background: rgb(222 222 222 / 28%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#data {
+    font-size: 1em;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-family: 'Urbanist', sans-serif;
+    width: 100%;
+    padding: 0.5em 1em;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+   color: white;
+}
+
+#botao {
+    font-size: 1em;
+    border-radius: 0 20px 20px 0;
+    background-color: rgb(255 255 255 / 66%);
+    padding: 0.8em 1em;
+    border: none;
+}
+
+main {
+    padding: 5em 3em 0 3em;
+    background: #f9f9f9;
+}
+
+.container-main {
+    margin: 0 auto;
+    max-width: 70vw;
+    top: -150px;
+    position: relative;
+    padding: 5em;
+    background: white;
+    line-height: 1.7;
+    border-radius: 2em;
+    box-shadow: 0 16px 40px rgb(17 0 102 / 5%);
+}
+
+.text-title {
+    font-size: 2em;
+    margin: 0 0 0.75em 0;
+    font-weight: 900;
+    color: #3f1c9c;
+    line-height: 1.2;
+}
+
+#text-data {
+    margin: 0 0 1.5em 0;
+    padding: 0.4em;
+    background: #c2ffeb;
+    max-width: 100px;
+    text-align: center;
+    border-radius: 1em;
+    color: #0da572;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.copyright-author {
+    margin: 2em 0 0 0;
+    display: flex;
+    font-weight: 900;
+    color: #adadad;
+    font-size: 1.4em;
+    align-content: center;
+    align-items: center;
+}
+
+.fa-camera {
+    margin-right: 0.5em;
+    color: #aeadad;
+}
+
+footer {
+    background: #0b0c33;
+    padding: 3em;
+    color: #666784;
+}
+
+.container-footer {
+    width: 80vw;
+    margin: 0 auto;
+    border-bottom: 2px solid #34344d;
+    line-height: 1.65;
+    padding: 2em 0;
+}
+
+.social-media {
+    width: 80vw;
+    margin: 0 auto;
+    border-bottom: 2px solid #34344d;
+    line-height: 1.65;
+    padding: 2em 0;
+    font-weight: 800;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+h2.about-apod  {
+    font-size: 2em;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    line-height: 2;
+    border-bottom: 3px solid #34344d;
+    margin: 0 0 1em 0;
+}
+
+.fab, .fa-rocket {
+    font-weight: 900;
+    font-size: 1.25em;
+    margin-right: 0.75em;
+}
+
+.social {
+    display: flex;
+
+}
+
+.social a, .nasa a, .credits a {
+    color: #77789e;
+    font-size: 1em;
+}
+
+.credits {
+    text-align: center;
+    margin: 2em 0 0 0;
+    font-size: 0.8em;
+    letter-spacing: 3px;
+    font-weight: 400;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.::APOD::. Astronomy Picture of the Day</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;400;600;800;900&display=swap" rel="stylesheet">
+  <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'
+    integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr' rel='stylesheet' />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+    <div class='container-header'>
+        <div class='title'>
+        <h1>APOD</h1>
+        <h2>Astronomy Picture of the Day</h2>   
+        <p>Since 06-20-1995.</p> 
+        <div class="choose">
+            <input type="date" min="1995-06-20" name="data" id="data" />
+            <button id="botao"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+        <div class='container-image'>
+            <div id="picture-apod"></div>
+            <div id="video-apod"></div>
+        </div>
+    </div>
+    </header>
+    <main>
+                  <!-- descricao -->
+                  <div class='container-main'>
+                <div id='text-data'></div>
+                  <div id='titulo' class='text-title'></div>
+                  <div id="description">
+                
+                  </div>
+              
+                    <div class='copyright-author'>
+                        <i class="fas fa-camera"></i>
+                    <div id='copyright'></div>   
+                    </div>
+                 
+               
+                </div>
+    </main>
+    <footer>
+     <div class='container-footer'>
+         <h2 class='about-apod'>About APOD</h2>
+        Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. The Astronomy Picture of the Day (APOD) is based upon work supported by NASA under award No. 80NSSC17M0076. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Aeronautics and Space Administration.
+     </div>   
+     <div class='social-media'>
+         <div class='nasa'>
+        <i class="fas fa-rocket"></i> <a href='https://api.nasa.gov/' target='_blank'>NASA API
+        </a>    </div>
+    <ul class='social'>
+      <li> <a href='https://www.instagram.com/nasa' target='_blank'><i class="fab fa-instagram"></i></a></li>
+       <li><a href='https://www.facebook.com/nasa' target='_blank'><i class="fab fa-facebook-f"></i></a></li>
+    </ul>
+     </div>
+     <div class='credits'>Coded by Gabriela Costa  - <a href='https://github.com/gabrielaalvescosta' target='_blank'>Github</a></div>
+    </footer>
+</body>
+</html>
