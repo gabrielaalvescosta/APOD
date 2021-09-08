@@ -134,13 +134,20 @@ h2.about-apod {
         background-position: center;
         background-attachment: fixed;
     }
+#video-apod {
+    display: none;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
     #copyright {
         font-size: 0.7em;
     }
 
     .social-media {
-        max-width: 80vw;
+        max-width: 100%;
     }
 
     
