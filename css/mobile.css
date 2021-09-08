@@ -93,3 +93,56 @@ h2.about-apod {
     width: auto;
 }
 }
+
+
+@media only screen and (max-width: 380px){
+
+    body {font-size: 16px;}
+
+    header {
+        height: auto;
+    }
+
+    .container-header {
+        width: 100vw;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container-image {
+        height: 100vh;
+    }
+
+    .container-main {
+        max-width: 80vw;
+        top: -110px;
+        padding: 2.5em;
+        z-index: 20;
+    }
+
+    header h1 {
+        font-size: 3em;
+        font-weight: 900;
+        line-height: 1.4;
+    }
+
+    #picture-apod {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    #copyright {
+        font-size: 0.7em;
+    }
+
+    .social-media {
+        max-width: 80vw;
+    }
+
+    
+
+}
