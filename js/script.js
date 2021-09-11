@@ -63,7 +63,7 @@ $.ajax({
       copyright[0].innerHTML = resposta.copyright;
       }
       else {
-      copyright[0].innerHTML = 'unknown';
+      copyright[0].innerHTML = 'Public Domain (NASA)';
       }
     console.log(resposta)
   },
