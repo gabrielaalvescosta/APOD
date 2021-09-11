@@ -35,7 +35,7 @@ function apod() {
         copyright[0].innerHTML = resposta.copyright;
         }
         else {
-        copyright[0].innerHTML = 'unknown';
+        copyright[0].innerHTML = 'Unknown';
         }
         console.log(resposta)
       },
