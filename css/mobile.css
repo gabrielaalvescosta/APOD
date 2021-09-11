@@ -50,20 +50,27 @@
 
 header {
     background-position-x: 0;
-    height: 110vh;
-    /* position: relative; */
-    /* z-index: 1; */
+    height: auto;
     align-items: center;
     justify-content: flex-start;
 }
 
 
+#picture-apod {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .container-header {
     width: 100vw;
-    flex-direction: column-reverse;
+    flex-direction: column;
     position: relative;
     z-index: 1;
-    height: 100vh;
+    height: 120vh;
     padding: 0;
     margin: 0;
 }
@@ -81,6 +88,7 @@ header {
     max-width: 85vw;
     top: -150px;
     padding: 3em;
+    z-index: 2;
 
 }
 
@@ -134,12 +142,12 @@ h2.about-apod {
         background-position: center;
         background-attachment: fixed;
     }
-#video-apod {
-    display: none;
-    height: auto;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    
+    #video-apod {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
 }
 
     #copyright {

@@ -1,11 +1,12 @@
 // Pegar os elementos através do JQuery
-const video = $("#video-apod");
+let video = $("#video-apod");
 const imagem = $("#picture-apod")
 const texto = $("#description");
 const botao = $("#botao");
 const titulo = $("#titulo");
 const textData = $("#text-data");
-const copyright = $("#copyright");
+let copyright = $("#copyright");
+const source = $("#source");
 
 // ao clicar no botao envia a data para o API
 botao.on("click", () => {
@@ -19,8 +20,10 @@ function apod() {
       success(resposta) {
         if(resposta.media_type === 'video') {
             imagem.css("display", `none`);
-            $("#video-apod > iframe").innerHTML("src", resposta.url);
-          }else{
+            video.css("display", `block`);
+            video.html(`<iframe src=${resposta.url} width='100%' height='100%' id='video-apod'></iframe>`)
+            
+          }else {
             imagem.css("background-image", `url(${resposta.url})`);
             video.css("display", `none`);
           }
@@ -28,7 +31,12 @@ function apod() {
         textData[0].innerHTML = resposta.date;
         titulo[0].innerHTML = resposta.title;
         texto[0].innerHTML = resposta.explanation;
+        if(resposta.copyright) {
         copyright[0].innerHTML = resposta.copyright;
+        }
+        else {
+        copyright[0].innerHTML = 'unknown';
+        }
         console.log(resposta)
       },
     });
@@ -42,7 +50,8 @@ $.ajax({
     data.setAttribute('max' , resposta.date)
     if(resposta.media_type === 'video') {
         imagem.css("display", `none`);
-        $("#video-apod > iframe").attr("src", resposta.url).show();
+        video.css("display", `block`)
+        video.innerHTML = `<iframe src=${resposta.url} width='320' height='240' id='video-apod'>`
       }else{
         imagem.css("background-image", `url(${resposta.url})`);
         video.css("display", `none`);
@@ -50,7 +59,12 @@ $.ajax({
     
     titulo[0].innerHTML = resposta.title;
     texto[0].innerHTML = resposta.explanation;
-    copyright[0].innerHTML = resposta.copyright;
+    if(resposta.copyright) {
+      copyright[0].innerHTML = resposta.copyright;
+      }
+      else {
+      copyright[0].innerHTML = 'unknown';
+      }
     console.log(resposta)
   },
 });
